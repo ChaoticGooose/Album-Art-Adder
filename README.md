@@ -17,7 +17,7 @@ python3 album-art-adder.py \[music-directory\]
 1. Clone the repository:
     ```shell
     git clone https://github.com/your-username/album-art-adder.git
-## Add to PATH (Optional)
+### Add to PATH (Optional)
 2. Navigate to the cloned repository:
     ```shell
     cd album-art-adder
