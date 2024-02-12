@@ -7,11 +7,17 @@ The album-art-adder.py script is a command-line tool that allows you to add albu
 - Embed album art into music files
 - Supports various music file formats (e.g., MP3, FLAC, etc.)
 
+## Usage
+In target directory:
+```shell
+python3 album-art-adder.py \[music-directory\]
+```
+
 ## Installation
 1. Clone the repository:
     ```shell
     git clone https://github.com/your-username/album-art-adder.git
-## Add to PATH
+## Add to PATH (Optional)
 2. Navigate to the cloned repository:
     ```shell
     cd album-art-adder

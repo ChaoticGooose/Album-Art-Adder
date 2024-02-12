@@ -58,7 +58,7 @@ def main():
         except (NotADirectoryError, FileNotFoundError) as e:
             print(f"{bcolors.FAIL}Error: {e}{bcolors.ENDC}")
             print(
-                f"{bcolors.FAIL}Usage: python3 main.py {bcolors.UNDERLINE}<music-directory>{bcolors.ENDC}"
+                f"{bcolors.FAIL}Usage: python3 main.py {bcolors.UNDERLINE}[music-directory]{bcolors.ENDC}"
             )
             return 1
 
