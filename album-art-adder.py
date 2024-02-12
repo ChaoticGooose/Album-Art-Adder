@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import os
 from glob import glob
 from sys import argv, exit
@@ -37,8 +39,17 @@ def main():
     try:
         # Get all files in directories with valid extentions
         pattern = os.path.join(directory, "*%s")
-        art = sum((glob(pattern % ext) for ext in image_extensions), [])[0]
+        try:
+            art = sum((glob(pattern % ext) for ext in image_extensions), [])[0]
+        except IndexError:
+            print(f"{bcolors.FAIL}Error: No image found in {directory}{bcolors.ENDC}")
+            return 1
         files = sum((glob(pattern % ext) for ext in audio_extensions), [])
+        if not files:
+            print(
+                f"{bcolors.FAIL}Error: No audio files found in {directory}{bcolors.ENDC}"
+            )
+            return 1
 
     except (NotADirectoryError, FileNotFoundError) as e:
         print(f"{bcolors.FAIL}Error: {e}{bcolors.ENDC}")
