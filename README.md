@@ -1,7 +1,6 @@
 # Album Art Adder
 
-## Description
-The album-art-adder.py script is a command-line tool that allows you to add album artwork to your music files. It automates the process of embedding album art into your music files.
+A command-line tool that allows you to add album artwork to your music files. It automates the process of embedding album art into your music files.
 
 ## Features
 - Embed album art into music files
@@ -10,7 +9,7 @@ The album-art-adder.py script is a command-line tool that allows you to add albu
 ## Usage
 In target directory:
 ```shell
-python3 album-art-adder.py \[music-directory\]
+python3 album-art-adder.py [music-directory]
 ```
 
 ## Installation
